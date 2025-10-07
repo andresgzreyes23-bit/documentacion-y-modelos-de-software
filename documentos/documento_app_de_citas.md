@@ -85,7 +85,7 @@ El MVP concentrará las funciones esenciales para demostrar valor y seguridad:
 
 •	Casos de uso:
 
- ¡[casos de uso](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/casos%20de%20uso.png)
+ ¡[actividades](./actividades.png)
 
 El diagrama de casos de uso muestra las interacciones entre los actores externos (usuarios, administrador, moderador, servicios externos) y las funciones principales del sistema.
 Representa qué hace la app, no cómo lo hace.
