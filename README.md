@@ -1,6 +1,6 @@
 # documentacion-y-modelos-de-software
 PPA Documentación 
-ntroducción (versión para entrega)
+introducción 
 
 Problema
 La gestión de interacciones, verificación y privacidad en apps de citas puede generar cuentas falsas, emparejamientos pobres y riesgos en la comunicación entre usuarios. Falta de control sobre perfiles y prácticas inseguras provocan desconfianza y baja retención.
