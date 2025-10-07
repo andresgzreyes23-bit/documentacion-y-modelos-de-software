@@ -84,8 +84,7 @@ El MVP concentrará las funciones esenciales para demostrar valor y seguridad:
 7.	Diagrmas UML
 
 •	Casos de uso:
-
- ¡[actividades](./actividades.png)
+[casos de uso](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/casos%20de%20uso.png) 
 
 El diagrama de casos de uso muestra las interacciones entre los actores externos (usuarios, administrador, moderador, servicios externos) y las funciones principales del sistema.
 Representa qué hace la app, no cómo lo hace.
@@ -93,7 +92,8 @@ Representa qué hace la app, no cómo lo hace.
 
 
 •	Diagrama de Actividades:
- 
+
+[actividades](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/actividades.png)
 
 Representa el flujo de trabajo o proceso dentro de la aplicación, mostrando decisiones, bifurcaciones y condiciones.
 En este caso, el diagrama de actividades describe el proceso desde que un usuario se registra hasta que consigue un match:
@@ -105,6 +105,8 @@ En este caso, el diagrama de actividades describe el proceso desde que un usuari
 Este diagrama evidencia el flujo lógico del sistema, mostrando decisiones como “¿verificación exitosa?” o “¿hay match?”.
 
 •	Diagrama de Secuencia:
+
+[secuencia](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/secuencia.png)
  Muestra cómo los objetos o actores se comunican entre sí en el tiempo mediante mensajes.
 El diagrama de secuencia de la App de Citas representa la interacción entre Usuario, Servidor y Algoritmo de Emparejamiento.
 Ejemplo:
@@ -116,7 +118,7 @@ Ejemplo:
 Permite visualizar el orden temporal de las operaciones y cómo se pasa la información entre los componentes.
 
 •	Diagrama de Comunicación:  
-
+[comunicacio](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/comunicacion.png)
 Muestra cómo los objetos o actores se comunican entre sí en el tiempo mediante mensajes.
 El diagrama de secuencia de la App de Citas representa la interacción entre Usuario, Servidor y Algoritmo de Emparejamiento.
 Ejemplo:
@@ -128,23 +130,19 @@ Ejemplo:
 Permite visualizar el orden temporal de las operaciones y cómo se pasa la información entre los componente 
 
 •	Diagrama de paquetes:
+[paquetes](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/paquetes.png)
 
 Organiza el sistema en módulos o capas lógicas para mostrar cómo se agrupan las clases y componentes.
-💬 Explicación
+ Explicación
 En la App de Citas se divide en:
 •	Capa de presentación: interfaz de usuario móvil/web.
 •	Capa de lógica de negocio: algoritmos de emparejamiento, verificación y chat.
 •	Capa de datos: base de datos de usuarios, mensajes, matches y reportes.
-•	Servicios externos: API de SMS, correo o pasarela de pagos
- 
-
-
-
-
+•	Servicios externos: API de SMS, correo o pasarela de pagos 
 
 
 •	Diagrama de clases:
- 
+ [clases](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/clases.png)
 
 Define la estructura estática del sistema: clases, atributos, métodos y relaciones (asociación, herencia, composición).
 En la App de Citas se representan clases como:
@@ -157,10 +155,11 @@ El diagrama muestra cómo los objetos se relacionan:
 •	Sirve como modelo conceptual y base para el diseño de la base de datos.
 
 •	Diagrama de objetos:
- 
+ [objetos](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/objetos.png)
 
 
 •	Diagrama de estados:  
+[estados](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/estados.png)
 Describe el ciclo de vida de un objeto, mostrando los posibles estados por los que pasa y los eventos que causan los cambios.
 Para la App de Citas, el ejemplo más claro es el ciclo de un Match:
 1.	No existe →
@@ -172,7 +171,7 @@ Para la App de Citas, el ejemplo más claro es el ciclo de un Match:
 Permite comprender cómo se controlan los flujos de cambio de estado dentro del sistema.
 
 •	Diagrama de tiempo:
-
+[tiempo](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/tiempo.png)
  
 Muestra cómo cambian los estados de varios objetos o actores a lo largo del tiempo.
 
@@ -187,9 +186,10 @@ Juan: Desconectado → Notificado → Leyendo → Respondiendo.
 Sirve para ilustrar la sincronización temporal y los momentos clave del intercambio.
 
 •	Diagrama de componentes:
+[componentes](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/componenetes.png)
 
 Modela los elementos físicos o de software del sistema (módulos, APIs, bases de datos, servicios).
-💬 Explicación
+ Explicación
 En la App de Citas:
 •	Frontend móvil/web (interfaz).
 •	API principal (módulos de usuarios, matches, chat, reportes).
@@ -198,12 +198,12 @@ En la App de Citas:
 Este diagrama muestra cómo se conectan los componentes de software para que el sistema funcione integralmente.
 
 •	Diagrama de instalación: 
- 
+ [instalacio](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/instalacion.png)
 
  
 
 •	Diagrama de despliegue:
-
+[Despliegue](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Imagen12.png)
 
 Muestra cómo se implementan y ejecutan los componentes del software en el entorno de producción (nodos, contenedores, redes).
 En la App de Citas:
@@ -212,6 +212,5 @@ En la App de Citas:
 •	Nodo Base de datos (RDS o MySQL): almacena toda la información.
 •	Nodo Servicios externos (verificación, notificaciones, almacenamiento).
 Representa la topología de ejecución del sistema, mostrando los nodos físicos y las conexiones entre ellos.
- 
 
 
