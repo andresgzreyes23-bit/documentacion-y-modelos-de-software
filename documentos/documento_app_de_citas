@@ -1,0 +1,87 @@
+Proyecto de Taller de Joyería – Avance del Proyecto Segundo Parcial
+Modelos y Documentación del Software
+
+
+
+Integrantes:
+• Laura Valentina rozzo espinel
+• Yudith Daniela Triana Vergel
+• Andres Felipe Gutierrez Reyes
+
+Docente:
+Ing. Hely Suarez Marin
+
+Fecha:
+Octubre / 7 / 2025
+
+FESC
+
+
+
+
+
+
+
+
+
+
+
+1.	Problema
+En la actualidad, la búsqueda de relaciones personales significativas se ve dificultada por la alta cantidad de interacciones superficiales en línea, la falta de herramientas fiables para verificar identidades y la exposición a fraudes o perfiles falsos. Muchas aplicaciones priorizan la cantidad sobre la calidad, lo que genera experiencias frustrantes, sensación de inseguridad y pérdida de confianza entre quienes buscan parejas o amistades auténticas. Se requiere una plataforma que facilite encuentros genuinos, proteja a sus usuarios y ofrezca resultados relevantes y verificables.
+
+2.	Solución
+Desarrollar una aplicación móvil de citas centrada en seguridad, veracidad y compatibilidad. La plataforma combinará verificación obligatoria de identidad (documentos + reconocimiento facial con prueba de vida), un algoritmo de compatibilidad que valore personalidad e intereses, y mecanismos de privacidad y reporte robustos.
+
+3.	Actores
+•  Usuario (persona que busca parejas): crea perfil, busca, da like, chatea, reporta, bloquea.
+•  Administrador: gestión de usuarios, revisión de reports, control del sistema.
+•  Moderador: revisa reports y mensajes marcados (si aplica).
+•  Sistema de Verificación: actor técnico (servicio) que valida identidad (correo/teléfono/ID opcional).
+•  Algoritmo de Emparejamiento: servicio que calcula coincidencias.
+•  Servicio de Mensajería / Chat: actor técnico que maneja mensajes cifrados y notificaciones.
+•  Pasarela de Pago (opcional): para suscripciones/pagos.
+•  Sistema de Notificaciones: push/email.
+
+4.	Reglas clave del sistema
+•	Registro requiere verificación (correo o SMS); sin verificación no se puede usar chat ni dar likes.
+•	Emparejamiento sólo muestra perfiles que acepten ser visibles y que cumplan filtros (edad/ubicación).
+•	Mensajería va cifrada (end-to-end si es posible) y los mensajes con denuncias quedan retenidos para moderación.
+•	Un usuario puede bloquear o reportar; el sistema registra acciones con fecha/hora/actor.
+•	Límites anti-spam: número de mensajes diarios a no-conexiones, límites para likes/swipes.
+•	Reglas de privacidad: no se exponen datos sensibles (teléfonos) salvo permiso explícito.
+•	Si verificación falla repetidamente, se suspende la cuenta hasta revisión manual.
+
+5.	Funciones principales (lista estándar para app de citas)
+•	Registro / Login / Verificación (correo/SMS / opcional: verificación por documento)
+•	Crear/Editar perfil (foto, bio, intereses, preferencias)
+•	Búsqueda/Explorar (filtros por ubicación, edad, intereses)
+•	Emparejamiento automático (algoritmo por intereses/afinidad)
+•	Like / Super-like / Swipe (acción de interés)
+•	Match (cuando ambos se gustan)
+•	Chat seguro (mensajes, enviar fotos, eliminar conversación)
+•	Reportar / Bloquear usuario
+•	Notificaciones push / email
+•	Administración (gestion usuarios, revisar reports)
+•	Estadísticas básicas (matches, mensajes, actividad)
+•	(Opcional) Suscripción premium, boost de perfil
+
+6.	Alcance (MVP)
+
+El MVP concentrará las funciones esenciales para demostrar valor y seguridad:
+
+* Registro de usuario con datos básicos.
+* Verificación de identidad (documento + selfie con prueba de vida).
+* Creación y edición de perfil (bio, intereses, fotos).
+* Algoritmo básico de emparejamiento (filtros: edad, distancia, intereses).
+* Sistema de match (mutua aceptación) y chat cifrado entre matches.
+* Funcionalidad para reportar y bloquear usuarios.
+* Panel administrativo para revisar reportes y gestionar verificaciones.
+
+
+
+
+
+7.	Diagrmas UML
+
+•	Casos de ushttps:
+¡[Diagrama casos de uso]https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/casos%20de%20uso.png
