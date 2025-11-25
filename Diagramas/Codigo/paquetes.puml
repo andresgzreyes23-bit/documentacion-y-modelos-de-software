@@ -1,0 +1,35 @@
+@startuml
+package "Frontend (Mobile/Web)" {
+  [UI: Perfiles]
+  [UI: Chat]
+  [UI: Perfil]
+}
+package "API / Backend" {
+  package "Presentacion" {
+    [AuthController]
+    [ProfileController]
+    [MatchController]
+    [ChatController]
+  }
+  package "Lógica de negocio" {
+    [Service: MatchService]
+    [Service: VerificationService]
+    [Service: ChatService]
+    [Service: ReportService]
+  }
+  package "Persistencia" {
+    [Repo: UserRepo]
+    [Repo: MatchRepo]
+    [Repo: MessageRepo]
+  }
+}
+package "Servicios Externos" {
+  [SMS/Email Provider]
+  [Payment Gateway]
+  [Third-party ID Verification]
+}
+[UI: Chat] --> [ChatController]
+[ChatController] --> [ChatService]
+[MatchController] --> [MatchService]
+[VerificationService] --> [SMS/Email Provider]
+@enduml
