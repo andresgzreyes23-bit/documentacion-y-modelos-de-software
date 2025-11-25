@@ -1,4 +1,4 @@
-Proyecto App de Citas – Avance del Proyecto Segundo Parcial
+Proyecto App de Citas – Examen Final
 Modelos y Documentación del Software
 
 
@@ -12,7 +12,7 @@ Docente:
 Ing. Hely Suarez Marin
 
 Fecha:
-Octubre / 7 / 2025
+Noviembre / 25 / 2025
 
 FESC
 
@@ -84,7 +84,7 @@ El MVP concentrará las funciones esenciales para demostrar valor y seguridad:
 7.	Diagrmas UML
 
 •	Casos de uso:
-[casos de uso](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/casos%20de%20uso.png) 
+[casos de uso](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Diagramas/diagramas%20png/casos%20de%20uso.png) 
 
 El diagrama de casos de uso muestra las interacciones entre los actores externos (usuarios, administrador, moderador, servicios externos) y las funciones principales del sistema.
 Representa qué hace la app, no cómo lo hace.
