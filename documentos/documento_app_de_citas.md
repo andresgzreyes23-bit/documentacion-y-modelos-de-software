@@ -93,7 +93,7 @@ Representa qué hace la app, no cómo lo hace.
 
 •	Diagrama de Actividades:
 
-[actividades](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/actividades.png)
+[actividades](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Diagramas/diagramas%20png/actividades.png)
 
 Representa el flujo de trabajo o proceso dentro de la aplicación, mostrando decisiones, bifurcaciones y condiciones.
 En este caso, el diagrama de actividades describe el proceso desde que un usuario se registra hasta que consigue un match:
@@ -106,7 +106,7 @@ Este diagrama evidencia el flujo lógico del sistema, mostrando decisiones como 
 
 •	Diagrama de Secuencia:
 
-[secuencia](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/secuencia.png)
+[secuencia](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Diagramas/diagramas%20png/secuencia.png)
  Muestra cómo los objetos o actores se comunican entre sí en el tiempo mediante mensajes.
 El diagrama de secuencia de la App de Citas representa la interacción entre Usuario, Servidor y Algoritmo de Emparejamiento.
 Ejemplo:
@@ -118,7 +118,7 @@ Ejemplo:
 Permite visualizar el orden temporal de las operaciones y cómo se pasa la información entre los componentes.
 
 •	Diagrama de Comunicación:  
-[comunicacio](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/comunicacion.png)
+[comunicacio](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Diagramas/diagramas%20png/comunicacion.png)
 Muestra cómo los objetos o actores se comunican entre sí en el tiempo mediante mensajes.
 El diagrama de secuencia de la App de Citas representa la interacción entre Usuario, Servidor y Algoritmo de Emparejamiento.
 Ejemplo:
@@ -130,7 +130,7 @@ Ejemplo:
 Permite visualizar el orden temporal de las operaciones y cómo se pasa la información entre los componente 
 
 •	Diagrama de paquetes:
-[paquetes](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/paquetes.png)
+[paquetes](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Diagramas/diagramas%20png/paquetes.png)
 
 Organiza el sistema en módulos o capas lógicas para mostrar cómo se agrupan las clases y componentes.
  Explicación
@@ -142,7 +142,7 @@ En la App de Citas se divide en:
 
 
 •	Diagrama de clases:
- [clases](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/clases.png)
+ [clases](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Diagramas/diagramas%20png/calses.png)
 
 Define la estructura estática del sistema: clases, atributos, métodos y relaciones (asociación, herencia, composición).
 En la App de Citas se representan clases como:
@@ -155,11 +155,11 @@ El diagrama muestra cómo los objetos se relacionan:
 •	Sirve como modelo conceptual y base para el diseño de la base de datos.
 
 •	Diagrama de objetos:
- [objetos](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/objetos.png)
+ [objetos](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Diagramas/diagramas%20png/objetos.png)
 
 
 •	Diagrama de estados:  
-[estados](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/estados.png)
+[estados](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Diagramas/diagramas%20png/estados.png)
 Describe el ciclo de vida de un objeto, mostrando los posibles estados por los que pasa y los eventos que causan los cambios.
 Para la App de Citas, el ejemplo más claro es el ciclo de un Match:
 1.	No existe →
@@ -171,7 +171,7 @@ Para la App de Citas, el ejemplo más claro es el ciclo de un Match:
 Permite comprender cómo se controlan los flujos de cambio de estado dentro del sistema.
 
 •	Diagrama de tiempo:
-[tiempo](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/tiempo.png)
+[tiempo](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Diagramas/diagramas%20png/tiempo.png)
  
 Muestra cómo cambian los estados de varios objetos o actores a lo largo del tiempo.
 
@@ -186,8 +186,7 @@ Juan: Desconectado → Notificado → Leyendo → Respondiendo.
 Sirve para ilustrar la sincronización temporal y los momentos clave del intercambio.
 
 •	Diagrama de componentes:
-[componentes](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/componenetes.png)
-
+[componentes](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Diagramas/diagramas%20png/componenetes.png)
 Modela los elementos físicos o de software del sistema (módulos, APIs, bases de datos, servicios).
  Explicación
 En la App de Citas:
@@ -198,12 +197,12 @@ En la App de Citas:
 Este diagrama muestra cómo se conectan los componentes de software para que el sistema funcione integralmente.
 
 •	Diagrama de instalación: 
- [instalacio](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/instalacion.png)
+ [instalacio](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Diagramas/diagramas%20png/instalacion.png)
 
  
 
 •	Diagrama de despliegue:
-[Despliegue](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Imagen12.png)
+[Despliegue](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/blob/main/Diagramas/diagramas%20png/despliegue.png)
 
 Muestra cómo se implementan y ejecutan los componentes del software en el entorno de producción (nodos, contenedores, redes).
 En la App de Citas:
