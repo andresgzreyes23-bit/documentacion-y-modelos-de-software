@@ -14,4 +14,5 @@ El sistema propuesto incluye:
 
 ##  Estructura del Repositorio
 
-*Diagramas en codigo plantuml: [diagramas_en_codigo](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/tree/main/Diagramas/Codigo)
+* Diagramas en codigo plantuml: [diagramas_en_codigo](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/tree/main/Diagramas/Codigo)
+* documentacion: [documentación](https://github.com/andresgzreyes23-bit/documentacion-y-modelos-de-software/tree/main/documentos)
