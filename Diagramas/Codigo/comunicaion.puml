@@ -1,0 +1,16 @@
+@startuml
+actor Usuario
+participant App
+participant "Servicio Mensajería" as Chat
+participant Moderador
+participant Administrador
+
+Usuario -> App: reportar(usuarioB,motivo)
+App -> Chat: preservarMensajes(contenido)
+App -> Moderador: crearTicket(report)
+Moderador -> App: solicitarEvidencia
+App -> Moderador: adjuntarMensajes
+Moderador -> Administrador: recomendarAccion
+Administrador -> App: suspenderCuenta? / advertir
+App --> Usuario: notificarResultado
+@enduml

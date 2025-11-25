@@ -1,0 +1,27 @@
+@startuml
+actor Usuario
+participant App
+participant "Servicio Verificación" as Verif
+participant "Algoritmo Emparejamiento" as Match
+participant "Servicio Mensajería" as Chat
+
+Usuario -> App: registrarse(datos)
+App -> Verif: solicitarCódigo(móvil/email)
+Verif -> Usuario: enviarCódigo()
+Usuario -> App: enviarCódigo()
+App -> Verif: validarCódigo()
+Verif --> App: OK
+App -> App: crearPerfil()
+App -> Match: calcularCoincidencias(perfil)
+Match --> App: listaCandidatos
+App -> Usuario: mostrarCandidatos
+Usuario -> App: darLike(candidato)
+App -> Match: registrarLike(usuario,candidato)
+Match --> App: match? (sí/no)
+alt match = sí
+  App -> Usuario: notificarMatch
+  App -> Chat: crearCanal(usuario,candidato)
+  Usuario -> Chat: enviarMensaje("Hola")
+  Chat --> candidato: entregarMensaje
+end
+@enduml

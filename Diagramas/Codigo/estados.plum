@@ -1,0 +1,13 @@
+@startuml
+[*] --> NoMatch
+NoMatch --> AwaitingLike : usuarioA da like
+AwaitingLike --> Matched : usuarioB da like
+AwaitingLike --> NoMatch : expira / rechaza
+Matched --> ChatActive : mensaje enviado
+ChatActive --> Reported : se reporta
+Reported --> UnderReview : moderador revisa
+UnderReview --> ActionTaken : sancionar / advertir
+ActionTaken --> Matched : apelación aceptada
+Matched --> Closed : usuarios bloquean / eliminan match
+Closed --> [*]
+@enduml

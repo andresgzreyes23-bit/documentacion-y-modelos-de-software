@@ -1,0 +1,16 @@
+@startuml
+node "Kubernetes Cluster" {
+  component "Deployment: api-deployment" as API
+  component "Deployment: chat-deployment" as CHAT
+  component "Deployment: worker-jobs" as WORKER
+}
+cloud "Cloud DB (Managed RDS / CloudSQL) - MultiAZ" as RDS
+cloud "Object Storage (S3/GCS)" as STORAGE
+cloud "CDN" as CDN
+User -> CDN : https://app.example.com
+CDN -> API : https
+API -> RDS : conn
+CHAT -> RDS : conn
+WORKER -> RDS : conn
+API -> STORAGE : put/get
+@enduml

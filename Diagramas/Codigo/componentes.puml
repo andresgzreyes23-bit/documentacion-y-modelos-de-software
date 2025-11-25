@@ -1,0 +1,24 @@
+@startuml
+package "Mobile/Web App" {
+  [UI Module]
+}
+package "Backend API" {
+  [Auth Component]
+  [Profile Component]
+  [Match Component]
+  [Chat Component]
+  [Report Component]
+}
+database "DB (Postgres / MySQL)" as DB
+cloud "SMS/Email Provider" as SMS
+cloud "Payment Gateway" as Pay
+[UI Module] --> [Auth Component]
+[UI Module] --> [Profile Component]
+[UI Module] --> [Chat Component]
+[Auth Component] --> DB
+[Profile Component] --> DB
+[Match Component] --> DB
+[Chat Component] --> DB
+[Auth Component] --> SMS
+[Auth Component] --> Pay
+@enduml

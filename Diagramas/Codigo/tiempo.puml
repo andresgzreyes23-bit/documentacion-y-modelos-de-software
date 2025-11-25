@@ -1,0 +1,44 @@
+@startuml
+@startuml
+title 5.9 Tiempo – Interacción entre usuarios (App de Citas)
+
+robust "Usuario Emisor (Carla)" as Carla
+robust "Sistema / App" as App
+robust "Usuario Receptor (Juan)" as Juan
+
+@0
+Carla is Navegando
+App is En_espera
+Juan is Desconectado
+
+@1
+Carla is Escribiendo
+App is Recibiendo_mensaje
+Juan is Desconectado
+
+@2
+Carla is Esperando_respuesta
+App is Procesando
+Juan is Notificado
+
+@3
+Carla is Esperando_respuesta
+App is Entregado
+Juan is Leyendo
+
+@4
+Carla is Esperando_respuesta
+App is Actualizando_estado
+Juan is Respondiendo
+
+@5
+Carla is Recibiendo_respuesta
+App is Sincronizando
+Juan is Mensaje_enviado
+
+@6
+Carla is Leyendo_respuesta
+App is Finalizado
+Juan is Navegando
+
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+actor Usuario
+actor Administrador
+actor Moderador
+actor "Sistema de Verificación" as Verif
+rectangle "App Citas" {
+  Usuario -- (Registrarse)
+  Usuario -- (Verificar cuenta)
+  Usuario -- (Crear/Editar perfil)
+  Usuario -- (Explorar perfiles)
+  Usuario -- (Dar like / Swipe)
+  Usuario -- (Ver Matches)
+  Usuario -- (Chatear con match)
+  Usuario -- (Reportar / Bloquear)
+  (Chatear con match) .> (Verificar cuenta) : <<include>>
+  Administrador -- (Gestionar usuarios)
+  Moderador -- (Revisar reports)
+  Verif -- (Verificar cuenta)
+  (Gestionar usuarios) .> (Verificar cuenta) : <<include>>
+}
+@enduml

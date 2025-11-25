@@ -1,0 +1,15 @@
+@startuml
+node "Usuario (Mobile/Web)" as UserNode
+node "Load Balancer" as LB
+node "App Server (API) - Cluster" as AppServer
+node "Chat Server (WebSocket)" as ChatServer
+node "DB Server (Primary)" as DB
+node "Storage (S3)" as S3
+node "Servicio Verificación (externo)" as Verif
+UserNode --> LB : HTTPS
+LB --> AppServer : HTTPS
+AppServer --> DB : SQL over TLS
+AppServer --> S3 : upload/download fotos
+AppServer --> Verif : API (SMS/ID)
+ChatServer --> DB : persistir mensajes
+@enduml

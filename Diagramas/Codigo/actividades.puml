@@ -1,0 +1,109 @@
+@startuml
+title Diagrama de Clases - App de Citas Segura
+
+skinparam classAttributeIconSize 0
+
+' ==== CLASE USUARIO ====
+class Usuario {
+  - id: int
+  - nombre: String
+  - correo: String
+  - telefono: String
+  - contraseñaHash: String
+  - estadoCuenta: String
+  - fechaRegistro: Date
+
+  + registrar(): boolean
+  + iniciarSesion(correo, contraseña): boolean
+  + verificarIdentidad(): boolean
+  + actualizarDatos(): void
+  + bloquearUsuario(usuarioId: int): void
+  + reportarUsuario(usuarioId: int, razon: String): void
+}
+
+' ==== CLASE PERFIL ====
+class Perfil {
+  - id: int
+  - usuarioId: int
+  - edad: int
+  - genero: String
+  - descripcion: String
+  - intereses: List<String>
+  - fotos: List<String>
+  - preferenciasBusqueda: String
+
+  + actualizarPerfil(): void
+  + obtenerPreferencias(): String
+}
+
+' ==== CLASE MATCH ====
+class Match {
+  - id: int
+  - usuarioA: int
+  - usuarioB: int
+  - fechaMatch: Date
+  - estado: String <<Activo, Finalizado>>
+
+  + crearMatch(): boolean
+  + validarMatch(): boolean
+  + finalizarMatch(): void
+}
+
+' ==== CLASE MENSAJE ====
+class Mensaje {
+  - id: int
+  - matchId: int
+  - emisorId: int
+  - contenido: String
+  - fechaEnvio: Date
+  - estado: String <<Enviado, Entregado, Leído>>
+
+  + enviar(): boolean
+  + encriptar(): String
+  + marcarComoLeido(): void
+}
+
+' ==== CLASE REPORTE ====
+class Reporte {
+  - id: int
+  - reportanteId: int
+  - reportadoId: int
+  - razon: String
+  - fecha: Date
+  - estado: String <<Pendiente, Revisado>>
+
+  + generarReporte(): void
+  + asignarModerador(moderadorId: int): void
+}
+
+' ==== CLASE MODERADOR ====
+class Moderador {
+  - id: int
+  - nombre: String
+  - correo: String
+
+  + revisarReporte(reporteId: int): void
+  + suspenderUsuario(usuarioId: int): void
+}
+
+' ==== CLASE ADMINISTRADOR ====
+class Administrador {
+  - id: int
+  - nombre: String
+  - correo: String
+
+  + aprobarVerificacion(usuarioId: int): void
+  + gestionarUsuarios(): void
+  + revisarSistema(): void
+}
+
+' ================= RELACIONES =================
+
+Usuario "1" o-- "1" Perfil : tiene >
+Usuario "1" -- "0..*" Match : participa en >
+Match "1" -- "0..*" Mensaje : contiene >
+Usuario "1" -- "0..*" Reporte : genera >
+Reporte "1" --> "1" Moderador : revisado_por >
+Administrador -- Usuario : gestiona >
+
+@enduml
